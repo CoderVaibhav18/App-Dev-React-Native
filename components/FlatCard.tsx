@@ -1,18 +1,13 @@
 import React, {JSX} from 'react';
-import {View, Text, StyleSheet, ScrollView, useColorScheme} from 'react-native';
+import {View, Text, StyleSheet, ScrollView} from 'react-native';
 
 export default function FlatCard(): JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
 
   return (
     <View>
       <Text
-        style={
-          isDarkMode
-            ? [styles.headingText, styles.headingTextWhite]
-            : [styles.headingText, styles.headingTextDark]
-        }>
-        FlatCard
+        style={styles.headingText}>
+        Flat Cards
       </Text>
       <ScrollView horizontal>
         <View style={styles.cardSection}>
@@ -39,11 +34,6 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     padding: 10,
-  },
-  headingTextWhite: {
-    color: '#fff',
-  },
-  headingTextDark: {
     color: '#fff',
   },
   cardSection: {
