@@ -38,21 +38,20 @@ const styles = StyleSheet.create({
   headingText: {
     fontSize: 20,
     fontWeight: 'bold',
-    paddingHorizontal: 15,
-    paddingVertical: 15,
+    padding: 10,
   },
   headingTextWhite: {
     color: '#fff',
   },
   headingTextDark: {
-    color: '#000',
+    color: '#fff',
   },
   cardSection: {
     flex: 1,
     flexDirection: 'row',
     gap: 10,
-    paddingHorizontal: 15,
-    paddingVertical: 15,
+    padding: 8,
+    marginLeft: 8,
   },
   cardContainer: {
     flex: 1,
