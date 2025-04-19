@@ -7,7 +7,7 @@ export default function FlatCard(): JSX.Element {
     <View>
       <Text
         style={styles.headingText}>
-        Flat Cards
+        Flat Card
       </Text>
       <ScrollView horizontal>
         <View style={styles.cardSection}>
